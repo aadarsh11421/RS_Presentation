@@ -12,6 +12,7 @@ output:
       highlightLines: true
       ratio: 16:9
       countIncrementalSlides: true
+output_file: index.html
 ---
 
 ```{r setup, include=FALSE}
@@ -75,7 +76,7 @@ style_duo_accent(
 library(knitr)
 library(kableExtra)
 
-sensor_data <- read.csv(here::here("Presentation/pollutants.csv"))
+sensor_data <- read.csv(here::here("pollutants.csv"))
 
 
 kable(sensor_data, format = "html", table.attr = "style='width:100%;'", align = 'c') %>%
