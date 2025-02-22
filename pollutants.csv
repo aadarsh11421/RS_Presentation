@@ -1,0 +1,8 @@
+S.No.,Variable,Resolution,Bandwidth,Basis of sensing
+1,NO2,7.0 km x 3.5 km,270-495 nm,UV backscatter
+2,SO2,7.0 km x 3.5 km,310-405 nm,UV wavelength pairs
+3,HCHO,7.0 km x 3.5 km,"320, 405 nm",Radiance
+4,CH4,7.0 km x 5.5 km,760 nm,"Reflectance (760 nm), Radiance (SWIR)"
+5,CO,7.0 km x 7.0 km,2305-2385 nm,Radiance (SWIR)
+6,O3,"5.5 km x 3.5 km, (7.0 km x 3.5 km before 06Aug 2019)",305-400 nm,Radiance (SWIR)
+7,Aerosol,7.0 km x 3.5 km,354 nm/388 nm Pair,Difference between observed (TOA) and modelled reflectance

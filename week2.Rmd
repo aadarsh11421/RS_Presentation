@@ -1,0 +1,148 @@
+---
+title: "Sentinel-5P"
+subtitle: "Global Air Monitoring Mission"
+author: "Aadarsh Ajikumar"
+institute: "University College London"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#685bc6",
+  secondary_color = "#000000",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+# Introduction of Sentinel-5P 
+
+- Sentinel-5P is a satellite which was launched in **2017** by the European Space Agency (ESA) as part of the Copernicus Program
+
+- Its main purpose is to monitor the atmospheric composition of pollutants
+
+- The pollutantns measured by the satellite are:
+  - NO₂, SO₂, O₃, CO, CH₄, and aerosols
+  
+- It uses the TROPOspheric Monitoring Instrument (TROPOMI) to measure these pollutants.
+
+- The data was available for users from 2018
+
+---
+
+# TROPOMI Characterstics
+
+- TROPOMI Features:
+  - The sensor is a passive sensor
+  - It has a push broom configuration
+  - Spatial Sampling - 7x7 km²
+  - Swath Width - 2600 km 
+  
+- The sensor revisits the same location after 16 days. This is also known as the orbit cycle
+
+- Spectral Ranges - UV, visible, near-infrared, shortwave infrared
+
+- It detects the absorption and scattering of the sunlight in the atmosphere by different sizes of particles.
+  
+
+---
+
+# Spatial Resolution of different Pollutants
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(knitr)
+library(kableExtra)
+
+sensor_data <- read.csv(here::here("Presentation/pollutants.csv"))
+
+
+kable(sensor_data, format = "html", table.attr = "style='width:100%;'", align = 'c') %>%
+  kable_styling(full_width = TRUE, bootstrap_options = c("striped", "hover"))
+
+```
+
+(Behera et al., 2022)
+
+---
+class: inverse center middle
+### TROPOMI's Spectral Range
+<div style="text-align: center;">
+  <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2017/07/tropomi_s_spectral_range/17076357-1-eng-GB/Tropomi_s_spectral_range.jpg" width="800px" />
+</div>
+European Space Agency
+---
+
+# Applications of Sentinel-5P Data
+
+- This data has a wide range of applications, as it measures 6 pollutants.
+
+- The purpose of this mission was to observe the atmospheric pollutants.
+
+- This data can be used to:
+  - Map the pollutants of cities and study the hotspots of different pollutants.
+  - Observe the ozone depletion in different parts of the world.
+  - Check for methane leaks from oil and gas fields.
+  
+- Many studies were done during the **COVID-19** using this data to observe the decline in pollution levels across different countries.
+
+- This data is also used in disaster management, especially in volcanic eruption and wildfires as they produce a lot sulphur dioxide, carbon dioxide and carbon monoxide 
+  
+- This data can also be used to study the affects of the greenhouse gases and observe **Global Warming and Climate change**.
+
+---
+
+# Reflection
+
+- This data is very useful, as now we can observe and study the changes in the atmosphere from 2017.
+
+- As this data is globally available, it is now possible to keep a check of different countries on their emission levels, which is essential as the planet's temperature is on a rise.
+
+- We can use this to set policies and observe and regulate emissions of industrial areas. 
+  
+- This data can also be used for to keep a check of the air quality, as this data is easily accessible, medical field can use this in their studies as well. 
+
+---
+class: inverse center middle
+
+# Sentinel 5P Liftoff
+
+<div style="text-align: center;">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/myGTxF96KrM" frameborder="0" allowfullscreen></iframe>
+</div>
+
+---
+
+# References
+
+1. Behera, M.D. et al. (2022) ‘COVID-19 slowdown induced improvement in air quality in India: rapid assessment using Sentinel-5P TROPOMI data’, Geocarto International, 37(25), pp. 8127–8147. Available at: https://doi.org/10.1080/10106049.2021.1993351.
+
+2. Senti Wiki, SP5 Mission, https://sentiwiki.copernicus.eu/web/s5p-mission
+
+3. Sentinel-5P, Prepared for Liftoff, https://www.youtube.com/embed/myGTxF96KrM
+
+
+
+
+
