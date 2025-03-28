@@ -15,7 +15,7 @@
  *    - xaringan wiki: https://github.com/yihui/xaringan/wiki
  *    - remarkjs wiki: https://github.com/gnab/remark/wiki
  *
- *  Version: 0.4.3
+ *  Version: 0.4.3.9000
  *
  * ------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap);
@@ -44,7 +44,7 @@
 
   /* Colors */
   --text-color: #000000;
-  --header-color: #ef8559;
+  --header-color: #A63D40;
   --background-color: #FFFFFF;
   --link-color: #000000;
   --text-bold-color: #000000;
@@ -53,11 +53,11 @@
   --inverse-background-color: #000000;
   --inverse-header-color: #FFFFFF;
   --inverse-link-color: #000000;
-  --title-slide-background-color: #ef8559;
-  --title-slide-text-color: #000000;
-  --header-background-color: #ef8559;
+  --title-slide-background-color: #A63D40;
+  --title-slide-text-color: #FFFFFF;
+  --header-background-color: #A63D40;
   --header-background-text-color: #FFFFFF;
-  --primary: #ef8559;
+  --primary: #A63D40;
   --secondary: #000000;
   --white: #FFFFFF;
   --black: #000000;
@@ -104,7 +104,7 @@ h1, h2, h3 {
   color: #000000;
 }
 .remark-slide-number {
-  color: #ef8559;
+  color: #A63D40;
   opacity: 1;
   font-size: 0.9rem;
 }
@@ -152,10 +152,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #ef855999;
+  color: #A63D4099;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #ef8559;
+  color: #A63D40;
 }
 .right-column {
   width: 75%;
