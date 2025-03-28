@@ -32,8 +32,8 @@ knitr::opts_chunk$set(
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_duo_accent(
-  primary_color = "#A63D40",
-  secondary_color = "#000000",
+  primary_color = "#243514",
+  secondary_color = "#351424",
   inverse_header_color = "#FFFFFF"
 )
 ```
